@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Hexbin map</title>
+<style>
+        body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        .top-right-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        .top-left-button {
+            position: absolute;
+            top: 10px;
+            right: 140px;
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .center-align {          
+            margin-left: 15px;
+            max-width: 1200px;
+        
+        }
+    </style>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<body>
+    <a href="/Walmart_growth/index4.html">
+    <button class="top-left-button" type="button"style="background-color: blue; color: white;"> << Previous </button>
+    </a>
+    <a href="/Dow_Calendar/index.html">
+    <button class="top-right-button" style="background-color: blue; color: white;"> Home >> </button>
+    </a>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>

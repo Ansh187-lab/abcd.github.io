@@ -1,0 +1,14 @@
+{
+  "name": "84197c482febb609",
+  "main": "84197c482febb609@310.js",
+  "version": "310.0.0",
+  "homepage": "https://observablehq.com/d/84197c482febb609",
+  "author": {
+    "name": "Glen Layne-Worthey",
+    "url": "https://observablehq.com/@c6e494fbd443ff4e"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}

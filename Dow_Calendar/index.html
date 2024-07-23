@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Calendar</title>
+<style>
+        body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        .top-right-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .center-align {
+          
+            margin-left: 15px;
+            max-width: 1100px;
+        
+        }
+    </style>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<body>
+    <a href="/Running_bar_chart/index1.html">
+    <button class="top-right-button" style="background-color: blue; color: white;"> Next >> </button>
+    </a>
+
+</body>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
